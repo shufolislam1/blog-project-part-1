@@ -10,4 +10,5 @@ class Post(models.Model):
     # abar multiple post ekta catagory'r under e thakte pare
     author = models.ForeignKey(Author, on_delete=models.CASCADE)
     
-    
+    def __str__(self):
+        return self.title

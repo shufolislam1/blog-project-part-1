@@ -7,3 +7,5 @@ class Author(models.Model):
     # phn = models.IntegerField()
     phn = models.CharField(max_length=12)
     
+    def __str__(self):
+        return self.name
