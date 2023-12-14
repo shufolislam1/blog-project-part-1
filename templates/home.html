@@ -1,4 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
-<h2>hello from home </h2>
+<div class="d-flex flex-wrap justify-content-center gap-3 mt-5">
+  {% for post in data %}
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{post.title}}</h5>
+        <p class="card-text">{{post.content}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+  </div>
 {% endblock content %}
