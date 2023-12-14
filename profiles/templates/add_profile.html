@@ -2,10 +2,10 @@
 
 {% block content %}
 <form action="" method="POST" style="width:50%; margin:auto">
-    <h2>add author</h2>
+    <h2>add profile</h2>
     {% load crispy_forms_tags %}
     {% csrf_token %}
-    {{author_form|crispy}}
+    {{profile_form|crispy}}
     <button class="btn btn-warning">Submit</button>
 </form>
 {% endblock content %}
