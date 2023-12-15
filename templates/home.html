@@ -12,7 +12,7 @@
         <button class="btn btn-primary btn-sm m-2" disabled>{{cat}}</button>
         {% endfor %}
         <a href="{% url 'edit_post' post.id %}" class="btn btn-warning">Edit</a>
-        <a href="#" class="btn btn-danger">Delete</a>
+        <a href="{% url 'delete_post' post.id %}" class="btn btn-danger">Delete</a>
       </div>
     </div>
   </div>
