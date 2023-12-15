@@ -7,7 +7,11 @@
       <div class="card-body">
         <h5 class="card-title">{{post.title}}</h5>
         <p class="card-text">{{post.content}}</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <p class="card-text">{{post.author.name}}</p>
+        {% for cat in post.catagory.all %}
+        <button class="btn btn-warning m-2" disabled>{{cat}}</button>
+        {% endfor %}
+        {% comment %} <a href="#" class="btn btn-primary">Go somewhere</a> {% endcomment %}
       </div>
     </div>
   </div>
